@@ -1,0 +1,50 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <title>User Application</title>
+</head>
+
+<body>
+  <Header class='header'>
+    <nav>
+      <div class="nav-wrapper header-content deep-purple darken-1">
+        <h1 class="header-title">Todo list</h1>
+        <p class="right hide-on-med-and-down">
+          Selected tasks: <span class="header-selected">0</span>
+        </p>
+      </div>
+    </nav>
+  </Header>
+
+  <main class="list">
+    <div class="container">
+      <nav>
+        <div class="nav-wrapper light-blue lighten-4">
+          <h1 class="list-title">Your tasks</h1>
+        </div>
+      </nav>
+      <div class='row'>
+        <ul class="collection with-header col s10 offset-s1 todo">
+          
+        </ul>
+      </div>
+      <div class="row">
+          <div class="input-field col s6 offset-s1">
+            <input id="taskname" placeholder="text" type="text" class="validate">
+            <label class="active" for="taskname">Your task</label>
+          </div>
+          <div class="col s4">
+              <a class="btn-floating btn-large pulse right" id='addtask'>
+                <i class="material-icons">library_add</i>
+              </a>
+          </div>
+        </div>
+    </div>
+  </main>
+</body>
+
+</html>
