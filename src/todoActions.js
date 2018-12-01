@@ -47,6 +47,7 @@ export function addListener(deleteBtn, checkbox, label, id){
 export function deleteTask(item, id){
   list.removeChild(item.parentNode.parentNode);
   LocalStorege.deleteItem(id)
+  countCheckTask.textContent = document.querySelectorAll('.collection-item').length
 }
 
 export function checkTask(checkbox, label, id){
